@@ -1,6 +1,6 @@
 package structures.tree;
 
-import structures.Node;
+import structures.node.Node;
 
 public class intTree {
 
