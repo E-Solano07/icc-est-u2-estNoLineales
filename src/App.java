@@ -1,5 +1,7 @@
 import java.util.Random;
-
+import java.util.Set;
+import collections.sets.Sets;
+import models.Contacto;
 import models.Person;
 import structures.node.Node;
 import structures.tree.BinaryTree;
@@ -9,9 +11,47 @@ import structures.tree.Ejercicio2;
 public class App {
 
     public static void main(String[] args) {
-        runIntComparativaPesos();
-        runPersonTree();
-        runEjercicios();
+        //runIntComparativaPesos();
+        //runPersonTree();
+        //runEjercicios();
+        runSets();
+    }
+
+    private static void runSets() {
+        Sets sets = new Sets();
+
+        // Primera implementación: HashSet
+        System.out.println("HashSet:");
+        Set<String> hashSet = sets.HashSet();
+        System.out.println(hashSet);
+        System.out.println("Tamaño: " + hashSet.size());
+        System.out.println(hashSet.contains("F"));
+
+        // Segunda implementación: LinkedHashSet
+        System.out.println("LinkedHashSet:");
+        Set<String> lhSet = sets.construirLinkedHashSet();
+        System.out.println(lhSet);
+        System.out.println(lhSet.size());
+        System.out.println(lhSet.contains("B"));
+
+        // Tercera implementación: TreeSet
+        System.out.println("TreeSet:");
+        Set<String> tSet = sets.construirTreeSet();
+        System.out.println(tSet);
+        System.out.println(tSet.size());
+        System.out.println(tSet.contains("B"));
+
+        // Cuarta implementación: TreeSetConComparador
+        System.out.println("TreeSetConComparador:");
+        Set<Contacto> tCSet = sets.construirTreeSetConComparador();
+        System.out.println(tCSet);
+        System.out.println(tCSet.size());
+
+        // Quinta implementación: ConstruirHashSet
+        System.out.println("ConstruirHashSet:");
+        Set<Contacto> hCSet = sets.construirHashSet();
+        System.out.println(hCSet);
+        System.out.println(hCSet.size());
     }
 
     private static void runIntComparativaPesos() {
