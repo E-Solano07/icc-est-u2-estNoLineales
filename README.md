@@ -49,3 +49,10 @@ Imprime los valores en ese orden.
 **Fecha:** 24/06/2026
 
 **Descripcion:** Se implementaron metodos que convierten un objeto o conjunto de datos en un valor numérico único, optimizando la búsqueda, comparación y almacenamiento de información en estructuras de datos complejas.
+
+# Mapas
+**Fecha:** 29/06/2026
+
+**Descripcion:** Se realizaron mapas encargados de almacenar información en pares de clave-valor, teniendo un funcionamiento similar al de un diccionario
+
+![Descripción de la captura](assets/image8.png)

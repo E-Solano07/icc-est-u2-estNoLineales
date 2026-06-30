@@ -1,5 +1,8 @@
+import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+
+import collections.maps.Maps;
 import collections.sets.Sets;
 import models.Contacto;
 import models.Person;
@@ -14,7 +17,16 @@ public class App {
         //runIntComparativaPesos();
         //runPersonTree();
         //runEjercicios();
-        runSets();
+
+        // runSets();
+        runMaps();
+    }
+
+    private static void runMaps() {
+        Maps maps = new Maps();
+        maps.construirHashMap();
+        maps.coLinkedHashMap();
+        maps.cTreeMap();
     }
 
     private static void runSets() {
