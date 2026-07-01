@@ -23,6 +23,20 @@ public class Node<T> {
 
     @Override
     public String toString() {
-        return "Node [" + value + "]";
+        return "N[" + value + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        return value.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Node) {
+            Node<T> other = (Node<T>) obj;
+            return value.equals(other.getValue());
+        }
+        return false;
     }
 }

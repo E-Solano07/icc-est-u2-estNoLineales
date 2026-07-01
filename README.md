@@ -56,3 +56,10 @@ Imprime los valores en ese orden.
 **Descripcion:** Se realizaron mapas encargados de almacenar información en pares de clave-valor, teniendo un funcionamiento similar al de un diccionario
 
 ![Descripción de la captura](assets/image8.png)
+
+# Grafos
+**Fecha:** 01/07/2026
+
+**Descripcion:** Se implementó un grafo mediante un HashMap donde cada nodo almacena varios nodos más, permite agregar nodos y crear conexiones entre ellos.
+
+![Descripción de la captura](assets/image9.png)
